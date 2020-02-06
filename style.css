@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.content {
+    border: 1px solid #666;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    border: 1px solid #666;
+    width: 60%;
+    margin 0 auto;
+    margin: auto;
+}
+
+.gradient-bar {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings {
+    border: 1px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1,
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.products li {
+    display: inline-block;
+    width: 24%;
+}
+
+.product img {
+    border: 1px solid #666;
+}
