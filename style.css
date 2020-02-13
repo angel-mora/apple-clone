@@ -33,15 +33,14 @@ footer span {
 }
 
 .gradient-bar {
-    /* display: flex;
-    align-items: stretch;
     position: absolute;
     top: 40px;
     left: 15%;
-    right: 15%; */
+    right: 15%;
     width: 1000px;
-    border: 1px solid black;
+    border: 1px solid #474747;
     border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     margin: 0 auto;
     margin-top: 40px;
@@ -55,6 +54,11 @@ footer span {
 .gradient-bar ul li {
     flex-grow: 1;
     list-style-type: none;
+    border-right: 1px solid rgb(84, 84, 84);
+}
+
+.gradient-bar li:first-child {
+    border-left: 0;
 }
 
 .gradient-bar li:hover a {
@@ -63,10 +67,16 @@ footer span {
 
 .gradient-bar a {
     display: block;
-    background-color: rgb(71, 71, 71);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(71, 71, 71); */
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
     overflow: hidden;
     align-self: stretch;
+}
+
+.gradient-bar li,
+.search {
+    background: linear-gradient( 0deg, rgb(104, 104, 104), rgb(94, 94, 94) 50%, rgb(112, 112, 112) 50%, rgb(141, 141, 141));
 }
 
 .button {
@@ -107,6 +117,21 @@ footer span {
 
 .search {
     width: 132px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    padding-left: 5px;
+    width: 78%;
+    height: 25px;
+    box-shadow: inset 0 1px 1px 1px rgb(48, 48, 48), inset 0 -1px 1px 1px rgb(128, 128, 128);
+    border-radius: 10px;
+    background-color: rgba(130, 130, 130, 0.32);
+    background-image: url('images/search-icon.svg');
+    background-position: 5px 5px;
 }
 
 .headings {
