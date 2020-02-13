@@ -12,17 +12,29 @@
 <body>
     <main class="content">
         <nav class="gradient-bar">
-            <button><i>Apple</i></button>
-            <button>Store</button>
-            <button>Mac</button>
-            <button>iPod</button>
-            <button>iPhone</button>
-            <button>iPad</button>
-            <button>iTunes</button>
-            <button>Support</button>
-            <button>Search</button>
-        </nav>
+            <ul>
+                <li><a href="#"><i class="apple button"></i></a></li>
+                <li><a href="#"><i class="store button"></i></a></li>
+                <li><a href="#"><i class="mac button"></i></a></li>
+                <li><a href="#"><i class="ipod button"></i></a></li>
+                <li><a href="#"><i class="iphone button"></i></a></li>
+                <li><a href="#"><i class="ipad button"></i></a></li>
+                <li><a href="#"><i class="itunes button"></i></a></li>
+                <li><a href="#"><i class="support button"></i></a></li>
+                <div class="search"><input type="text"></div>
+            </ul>
 
+            <!-- <a href="#"><i>Apple</i></a>
+            <a href="#">Store</a>
+            <a href="#">Mac</a>
+            <a href="#">iPod</a>
+            <a href="#">iPhone</a>
+            <a href="#">iPad</a>
+            <a href="#">iTunes</a>
+            <a href="#">Support</a>
+            <a href="#">Search<a/> -->
+        </nav>
+        <!-- FIX THE GRADIENT BAR IN THE TOP -->
         <section class="headings">
             <div>
                 <div class="first title">
@@ -37,38 +49,39 @@
             </div>
         </section>
 
-        <section class="products">
-            <ul>
-                <li><img class="product" src="images/img1.jpg" alt="img1"></li>
-                <li><img class="product" src="images/img2.jpg" alt="img2"></li>
-                <li><img class="product" src="images/img3.jpg" alt="img3"></li>
-                <li><img class="product" src="images/img4.jpg" alt="img4"></li>
-            </ul>
-        </section>
+        <aside class="products">
+            <img class="product" src="images/img1.jpg" alt="img1">
+            <img class="product" src="images/img2.jpg" alt="img2">
+            <img class="product" src="images/img3.jpg" alt="img3">
+            <img class="product" src="images/img4.jpg" alt="img4">
+        </aside>
 
-    </main>
-    <footer>
-        <div class="nav-footer">
-            <p>Shop the Apple Online Store (1-800-MY-APPLE), visit an Apple Retail Store, or find a reseller.</p>
-            <div class="copyright">
-                <p>Copyright © 2014 Apple Inc. All rights reserved.</p>
-                <p><span>Terms of Use</span></p>
-                <p><span>Privacy Policy</span></p>
+        <footer>
+            <div class="nav-footer">
+                <div class="bottom-nav">
+                    <p>Shop the <span>Apple Online Store</span> (1-800-MY-APPLE), visit an <span>Apple Retail Store</span>, or find a <span>reseller</span>.</p>
+                    <div class="nav-links">
+                        <ul class="right-list">
+                            <li>Site</li>
+                            <li>MapHot</li>
+                            <li>NewsRSS </li>
+                            <li>Feeds</li>
+                            <li>Media Info</li>
+                            <li>Environment</li>
+                            <li>Job</li>
+                            <li>Opportunities</li>
+                            <li>Contact Us</li>
+                            <li><img src="images/usa-icon.png" alt="USA"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2014 Apple Inc. All rights reserved.<span>Terms of Use</span> | <span>Privacy
+                            Policy</span></p>
+                </div>
             </div>
-
-            <ul>
-                <li>Site</li>
-                <li>MapHot</li>
-                <li>NewsRSS </li>
-                <li>Feeds</li>
-                <li>Media Info</li>
-                <li>Environment</li>
-                <li>Job</li>
-                <li>Opportunities</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 
 </html>
