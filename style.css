@@ -7,8 +7,7 @@ html {
 *,
 *:before,
 *:after {
-    /* box-sizing: inherit; */
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
@@ -19,12 +18,12 @@ footer {
     margin-top: 20px;
     margin-bottom: 5em;
     font-size: 12px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     color: #6e6e6e;
 }
 
 footer span {
-    color: #0088cc;
+    color: #08c;
 }
 
 .content {
@@ -40,7 +39,6 @@ footer span {
     width: 1000px;
     border: 1px solid #474747;
     border-radius: 5px;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     margin: 0 auto;
     margin-top: 40px;
@@ -49,6 +47,32 @@ footer span {
 .gradient-bar ul {
     display: flex;
     align-items: center;
+}
+
+.gradient-bar a {
+    display: block;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    align-self: stretch;
+}
+
+.right-list li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid #6e6e6e;
+    margin-left: 3px;
+    padding-right: 3px;
+    color: #08c;
+}
+
+.gradient-bar li:hover a {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+.gradient-bar li,
+.search {
+    background: linear-gradient( 0deg, rgb(104, 104, 104), rgb(94, 94, 94) 50%, rgb(112, 112, 112) 50%, rgb(141, 141, 141));
 }
 
 .gradient-bar ul li {
@@ -61,29 +85,11 @@ footer span {
     border-left: 0;
 }
 
-.gradient-bar li:hover a {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-}
-
-.gradient-bar a {
-    display: block;
-    /* background-color: rgb(71, 71, 71); */
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
-    overflow: hidden;
-    align-self: stretch;
-}
-
-.gradient-bar li,
-.search {
-    background: linear-gradient( 0deg, rgb(104, 104, 104), rgb(94, 94, 94) 50%, rgb(112, 112, 112) 50%, rgb(141, 141, 141));
-}
-
 .button {
     display: block;
     width: 100%;
     height: 30px;
-    background-image: url(images/navbar.svg);
+    background-image: url("images/navbar.svg");
     background-position-x: center;
 }
 
@@ -116,7 +122,7 @@ footer span {
 }
 
 .search {
-    width: 132px;
+    width: 60px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -180,21 +186,12 @@ footer span {
     justify-content: space-between;
 }
 
-.right-list li {
-    display: inline-block;
-    list-style: none;
-    border-right: 1px solid #6e6e6e;
-    margin-left: 3px;
-    padding-right: 3px;
-    color: #0088cc;
-}
-
-.right-list li:last-child {
-    border-right: none;
-}
-
 .copyright {
     display: flex;
     align-self: center;
     padding-top: 20px;
+}
+
+.right-list li:last-child {
+    border-right: none;
 }
