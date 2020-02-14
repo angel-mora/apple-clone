@@ -12,6 +12,10 @@ html {
   padding: 0;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 footer {
   width: 75%;
   margin: 0 auto;
@@ -147,6 +151,10 @@ footer span {
   align-items: center;
   background: url(images/hero.jpg) bottom no-repeat;
   height: 660px;
+}
+
+.invisible {
+    display: none;
 }
 
 .first {
