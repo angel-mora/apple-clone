@@ -2,11 +2,9 @@
 
 Fourth microverse project
 
-> This is a newyork times clone, which me and my partner mora managed to clone using pure HTML and CSS, and we suggested to name it ny-clone( https://chinweokwu.github.io/).
-
 ## Built With
 
-- HTML, CSS,
+- HTML, CSS
 
 ## Live Demo
 
