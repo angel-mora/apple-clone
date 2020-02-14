@@ -8,7 +8,7 @@ Fourth microverse project
 
 ## Live Demo
 
-https://angel-mora.github.io/apple-clon/
+https://angel-mora.github.io/apple-clone/
 
 ## Author
 
