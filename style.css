@@ -13,7 +13,7 @@ html {
 }
 
 main {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 footer {
@@ -154,7 +154,7 @@ footer span {
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 .first {
